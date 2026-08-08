@@ -1,0 +1,11 @@
+{
+  "selected_baseline": "v10.19.0 Recovery Artifact Provenance & Stable-Hash Assurance",
+  "selected_baseline_expected_sha256": "136dd28c5758379e214d31e2815f808a14463221021c3c77ad7560ef59af66c9",
+  "change_intent": "prevent stale or rollback-prone durable artifact-index state",
+  "files_changed": ["engineering/tools/index_transition_guard_v2.py", "engineering/tests/test_index_transition_guard_v2.py"],
+  "completed_focused_tests": ["12 passed, 0 failed"],
+  "last_failing_command": "exact durable guard focused suite before expectation repair",
+  "stdout_stderr_summary": "3 failures were exception-message expectation mismatches; behavior was fail-closed. Expectations repaired and exact suite passed 12/12.",
+  "next_repair_action": "recover exact v10.19.0 product bytes; otherwise continue durable recovery/tooling hardening",
+  "persistence_status": "tool, tests, report, and checkpoint published to GitHub in this run"
+}
