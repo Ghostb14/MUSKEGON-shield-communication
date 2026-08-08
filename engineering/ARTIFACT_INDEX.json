@@ -1,5 +1,7 @@
 {
-  "schema": 2,
+  "schema": 3,
+  "generation": 1,
+  "previous_index_sha256": "d21328537fa5bf3d0aa7cdcee293ece2e1f9b884dbac96866fcc6fd066ffba4b",
   "project": "MUSKEGON Shield Communication",
   "durable_storage": "GitHub repository Ghostb14/MUSKEGON-shield-communication",
   "current_expected_baseline": {
@@ -72,6 +74,54 @@
       "clean_validation_total": "not applicable; not a product release",
       "publication_commit": "08f595445753a5148fbecf352e2487e34611264c",
       "publication_timestamp": "2026-08-08T14:59:00-04:00"
+    },
+    {
+      "logical_name": "artifact-index-transition-guard",
+      "version": "run-10",
+      "artifact_type": "degraded_mode_tooling",
+      "durable_repository_path": "engineering/tools/index_transition_guard_v2.py",
+      "sha256": "77d34ec9f19141b586283484bf3d71e4c42ae30c2f8eaad865c12a97a2a82767",
+      "status": "CANDIDATE",
+      "source_validation_total": "12 passed, 0 failed focused tooling tests",
+      "clean_validation_total": "not applicable; not a product release",
+      "publication_commit": "d4a213e37d842c922d0960651d4bb021ff50ad85",
+      "publication_timestamp": "2026-08-08T15:59:00-04:00"
+    },
+    {
+      "logical_name": "artifact-index-transition-guard-tests",
+      "version": "run-10",
+      "artifact_type": "degraded_mode_test_source",
+      "durable_repository_path": "engineering/tests/test_index_transition_guard_v2.py",
+      "sha256": "467def2187439f8475d782df6d3d7e709bbb1a172ecfdc6d063ad3f72adbf308",
+      "status": "CANDIDATE",
+      "source_validation_total": "12 passed, 0 failed",
+      "clean_validation_total": "not applicable; not a product release",
+      "publication_commit": "a569bed2f6f82cb41fcf23b2ba6d99cd66bc22bd",
+      "publication_timestamp": "2026-08-08T15:59:00-04:00"
+    },
+    {
+      "logical_name": "engineering-run-10-report",
+      "version": "run-10",
+      "artifact_type": "degraded_mode_run_report",
+      "durable_repository_path": "engineering/runs/2026-08-08-run-10.json",
+      "sha256": "372ed593d957cf3ca70f60741f9c0486472a2bfb16277318618801a6fa9ab417",
+      "status": "CANDIDATE",
+      "source_validation_total": "records 12 passed, 0 failed focused tooling tests",
+      "clean_validation_total": "not applicable; not a product release",
+      "publication_commit": "570c15daf5a1127bbc3b30798e2fbbdbd19c8bce",
+      "publication_timestamp": "2026-08-08T15:59:00-04:00"
+    },
+    {
+      "logical_name": "engineering-checkpoint-run-10",
+      "version": "run-10",
+      "artifact_type": "non_sensitive_checkpoint",
+      "durable_repository_path": "engineering/checkpoints/run-10.json",
+      "sha256": "46daffcd93fd7b25c0cca063bb062e407a7e34674ebf77d5a93e48e2eb0293ec",
+      "status": "CANDIDATE",
+      "source_validation_total": "sanitized checkpoint only",
+      "clean_validation_total": "not applicable; not a product release",
+      "publication_commit": "402506ff401025facc2d67ec6cd66f5111a97130",
+      "publication_timestamp": "2026-08-08T15:59:00-04:00"
     }
   ]
 }
