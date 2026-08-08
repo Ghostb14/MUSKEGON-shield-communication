@@ -1,0 +1,14 @@
+{
+  "selected_baseline": "v10.19.0 expected identity only",
+  "selected_baseline_sha256": "136dd28c5758379e214d31e2815f808a14463221021c3c77ad7560ef59af66c9",
+  "change_intent": "enforce durable artifact-index truthfulness with executable fail-closed verification",
+  "files_changed": [
+    "engineering/tools/artifact_index_verifier.py",
+    "engineering/tests/test_artifact_index_verifier.py"
+  ],
+  "completed_focused_tests": "15 passed, 0 failed",
+  "last_failing_command": null,
+  "stdout_stderr_summary": "python compile passed; focused pytest suite 15 passed",
+  "next_repair_action": "retry exact v10.19.0 artifact recovery; if recovered, verify bytes before product engineering",
+  "persistence_status": "tool and tests durably published and reread from GitHub"
+}
