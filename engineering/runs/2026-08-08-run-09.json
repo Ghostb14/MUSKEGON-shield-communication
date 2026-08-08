@@ -11,7 +11,8 @@
   "discovery": {
     "mnt_data_zip_candidates_initial": 0,
     "file_library_exact_v10_19_recovered": false,
-    "github_exact_v10_19_bytes_recovered": false
+    "github_exact_v10_19_bytes_recovered": false,
+    "mnt_data_zip_candidates_final": 0
   },
   "change": {
     "intent": "fail closed when durable artifact index claims missing, hash-mismatched, unsafe, or falsely validated artifacts",
@@ -41,5 +42,13 @@
     "test_reread_from_github": true
   },
   "package_status": "NO_CANDIDATE_NO_VALIDATED_RELEASE",
-  "remaining_blocker": "recover exact validated v10.19.0 bytes or a newer fully qualified release"
+  "remaining_blocker": "recover exact validated v10.19.0 bytes or a newer fully qualified release",
+  "same_run_repair_attempts": [
+    {
+      "stage": "durable reread independent raw GitHub probe",
+      "failure": "curl DNS resolution failure for raw.githubusercontent.com",
+      "classification": "external execution/network limit",
+      "repair": "used connected GitHub fetch_file path to reread durable artifacts and index; did not blindly rerun identical curl command"
+    }
+  ]
 }
