@@ -1,0 +1,31 @@
+{
+  "run": "2026-08-08-run-10",
+  "mode": "DEGRADED_MODE_NOT_PRODUCT_ENGINEERING",
+  "baseline": {
+    "version": "10.19.0",
+    "archive": "muskegon-shield-communication-v10.19.0-recovery-artifact-provenance-assurance-release.zip",
+    "expected_sha256": "136dd28c5758379e214d31e2815f808a14463221021c3c77ad7560ef59af66c9",
+    "fresh_hash_verified": false,
+    "blocker": "exact validated product archive bytes unavailable from /mnt/data, durable GitHub storage, and File Library"
+  },
+  "improvement": {
+    "name": "durable artifact-index anti-rollback transition guard",
+    "root_cause": "durable index entries were content-verified but the index itself had no cryptographic predecessor binding or monotonic transition enforcement, allowing stale or rollback-prone state replacement",
+    "files_changed": ["engineering/tools/index_transition_guard_v2.py", "engineering/tests/test_index_transition_guard_v2.py"]
+  },
+  "same_run_repairs": [
+    "initial full-size GitHub publication payload was connector-blocked; publication strategy changed to a smaller equivalent durable module",
+    "three focused failures were exception-message expectation mismatches; expectations were corrected without weakening behavior and the exact suite was rerun"
+  ],
+  "validation": {
+    "python_compile": "PASS",
+    "focused_tests": "12 passed, 0 failed",
+    "product_security_boundary_tests": "NOT RUN - product source unavailable",
+    "preflight": "NOT RUN - product source unavailable",
+    "source_full_regression": "NOT RUN - product source unavailable",
+    "package_build": "NOT RUN - product source unavailable",
+    "clean_extraction": "NOT RUN - product source unavailable",
+    "clean_full_regression": "NOT RUN - product source unavailable"
+  },
+  "package_status": "NO_PRODUCT_CANDIDATE_NO_VALIDATED_RELEASE"
+}
