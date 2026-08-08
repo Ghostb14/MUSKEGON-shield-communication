@@ -54,11 +54,11 @@
       "version": "run-09",
       "artifact_type": "degraded_mode_run_report",
       "durable_repository_path": "engineering/runs/2026-08-08-run-09.json",
-      "sha256": "e3b3f4a00e5ada2ec9c71ebb76e39dd3d0e02fcad5ae6088300123db54b006e6",
+      "sha256": "b9af23b60016a2724a8bb691df4efdee4179bddacf1fbb11aa43a99223080790",
       "status": "CANDIDATE",
       "source_validation_total": "records 15 passed, 0 failed focused tooling tests",
       "clean_validation_total": "not applicable; not a product release",
-      "publication_commit": "d72575cb7882885a191434350d53e905b7b9c733",
+      "publication_commit": "25f934cd9f7068cc74448d8d0f4d9adfc4f14c17",
       "publication_timestamp": "2026-08-08T14:59:00-04:00"
     },
     {
@@ -66,11 +66,11 @@
       "version": "run-09",
       "artifact_type": "non_sensitive_checkpoint",
       "durable_repository_path": "engineering/checkpoints/latest.json",
-      "sha256": "de797b02274b106b192f638d5864809eb641632d5b1afcaf3db89130c7d442a8",
+      "sha256": "7e1f378813e448b3b6a6b2a88817bb7b58530514e80236e07b799fedce9ca405",
       "status": "CANDIDATE",
       "source_validation_total": "sanitized checkpoint only",
       "clean_validation_total": "not applicable; not a product release",
-      "publication_commit": "b28ae0376260bb70c379444eb8ae5edd314bfcf7",
+      "publication_commit": "08f595445753a5148fbecf352e2487e34611264c",
       "publication_timestamp": "2026-08-08T14:59:00-04:00"
     }
   ]
