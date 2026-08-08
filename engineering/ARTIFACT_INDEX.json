@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "project": "MUSKEGON Shield Communication",
+  "durable_storage": "GitHub repository Ghostb14/MUSKEGON-shield-communication",
+  "current_expected_baseline": {
+    "version": "10.19.0",
+    "name": "Recovery Artifact Provenance & Stable-Hash Assurance",
+    "archive": "muskegon-shield-communication-v10.19.0-recovery-artifact-provenance-assurance-release.zip",
+    "expected_sha256": "136dd28c5758379e214d31e2815f808a14463221021c3c77ad7560ef59af66c9",
+    "bytes_durably_present": false,
+    "status": "EXPECTED_IDENTITY_ONLY"
+  },
+  "artifact_link_policy": {
+    "sandbox_links_require_live_runtime_existence_check": true,
+    "sandbox_links_are_temporary": true,
+    "durable_links_preferred": true,
+    "never_report_missing_historical_sandbox_path_as_downloadable": true
+  },
+  "release_publication_policy": {
+    "validated_release_requires_zero_failure_source_suite": true,
+    "validated_release_requires_zero_failure_clean_extraction_suite": true,
+    "validated_release_requires_package_integrity": true,
+    "validated_release_requires_archive_safety": true,
+    "validated_release_requires_manifest_verification": true,
+    "validated_release_requires_durable_publication_or_explicit_pending_status": true
+  }
+}
