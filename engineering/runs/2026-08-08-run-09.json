@@ -1,0 +1,45 @@
+{
+  "run_date": "2026-08-08",
+  "mode": "DEGRADED_MODE_NOT_PRODUCT_ENGINEERING",
+  "baseline": {
+    "version": "10.19.0",
+    "archive": "muskegon-shield-communication-v10.19.0-recovery-artifact-provenance-assurance-release.zip",
+    "expected_sha256": "136dd28c5758379e214d31e2815f808a14463221021c3c77ad7560ef59af66c9",
+    "fresh_hash_verified": false,
+    "reason": "exact archive bytes unavailable"
+  },
+  "discovery": {
+    "mnt_data_zip_candidates_initial": 0,
+    "file_library_exact_v10_19_recovered": false,
+    "github_exact_v10_19_bytes_recovered": false
+  },
+  "change": {
+    "intent": "fail closed when durable artifact index claims missing, hash-mismatched, unsafe, or falsely validated artifacts",
+    "files": [
+      "engineering/tools/artifact_index_verifier.py",
+      "engineering/tests/test_artifact_index_verifier.py"
+    ],
+    "root_cause": "artifact persistence policy and index existed, but no executable verifier enforced durable existence/hash claims or link-policy invariants"
+  },
+  "validation": {
+    "python_compile": "PASS",
+    "focused_tests_passed": 15,
+    "focused_tests_failed": 0,
+    "product_security_boundary_tests": "NOT_RUN_PRODUCT_SOURCE_UNAVAILABLE",
+    "product_preflight": "NOT_RUN_PRODUCT_SOURCE_UNAVAILABLE",
+    "source_full_regression": "NOT_RUN_PRODUCT_SOURCE_UNAVAILABLE",
+    "package_build": "NOT_RUN_PRODUCT_SOURCE_UNAVAILABLE",
+    "exact_clean_extraction": "NOT_RUN_PRODUCT_SOURCE_UNAVAILABLE",
+    "clean_full_regression": "NOT_RUN_PRODUCT_SOURCE_UNAVAILABLE"
+  },
+  "durable_publication": {
+    "tool_commit": "6612c2ec0c2f51d47a0050d396f851d3e5f22eba",
+    "test_commit": "d13a0e6820c99144dd315a683ad9c5479102caa2",
+    "tool_sha256": "180cef4ff9516a620be8655280c98cbdc60f106e55a48d2119f1a1fcecdbd888",
+    "test_sha256": "4100ecc43444f1834cf7e5a9a9abbf4515bb7a18181454fff67679695d3b6140",
+    "tool_reread_from_github": true,
+    "test_reread_from_github": true
+  },
+  "package_status": "NO_CANDIDATE_NO_VALIDATED_RELEASE",
+  "remaining_blocker": "recover exact validated v10.19.0 bytes or a newer fully qualified release"
+}
