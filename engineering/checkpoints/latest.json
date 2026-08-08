@@ -7,8 +7,8 @@
     "engineering/tests/test_artifact_index_verifier.py"
   ],
   "completed_focused_tests": "15 passed, 0 failed",
-  "last_failing_command": null,
-  "stdout_stderr_summary": "python compile passed; focused pytest suite 15 passed",
-  "next_repair_action": "retry exact v10.19.0 artifact recovery; if recovered, verify bytes before product engineering",
-  "persistence_status": "tool and tests durably published and reread from GitHub"
+  "last_failing_command": "curl raw.githubusercontent.com durable reread probe",
+  "stdout_stderr_summary": "python compile passed; focused pytest suite 15 passed; raw GitHub curl probe failed DNS; GitHub connector reread succeeded; final /mnt/data ZIP recheck found 0",
+  "next_repair_action": "retry exact v10.19.0 artifact recovery; use GitHub connector for durable rereads while container DNS is unavailable",
+  "persistence_status": "tool, tests, run report, checkpoint, and artifact index durably published through GitHub connector"
 }
